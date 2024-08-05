@@ -1,0 +1,13 @@
+<h1>Result</h1>
+<p><%= @word%></p>
+
+<% if @bool_included && @bool_englishword %>
+  <p><strong>Congratulations</strong>, <%= @word %> is a valid word in English</p>
+<% elsif @bool_included == false %>
+  <p>Sorry, but <strong><%= @word %></strong> cannot be built out of <%@array_letters.joint(", ")%></p>
+<% elsif @bool_englishword == false %>
+  <p>Sorry, but <strong><%= @word %></strong> does not seem to be a valid english word</p>
+<% end %>
+
+
+<button><%= link_to "Play again", root_path %></button>

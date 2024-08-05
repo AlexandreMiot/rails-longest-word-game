@@ -13,3 +13,27 @@
  *= require_tree .
  *= require_self
  */
+
+#flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#letters {
+  text-align: center;
+}
+
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  display: inline;
+  margin-right: 15px; /* Optional: Adds space between items */
+  background-color: aqua;
+  padding: 10px;
+}
